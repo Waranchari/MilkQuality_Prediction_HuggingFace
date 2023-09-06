@@ -16,7 +16,7 @@ def main():
         Odor = st.selectbox("Odor", unique_values["Odor"])
         Fat = st.selectbox("Fat", unique_values["Fat"])
         Turbidity = st.selectbox("Turbidity", unique_values["Turbidity"])
-        Colour = st.slider("Colour", min_value=0, max_value=255)
+        Colour = st.slider("Colour ?", min_value=0, max_value=255)
 
         clicked = st.form_submit_button("Predict Quality")
         if clicked:
