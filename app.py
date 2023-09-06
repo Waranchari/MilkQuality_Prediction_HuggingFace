@@ -15,8 +15,8 @@ def main():
         Taste = st.selectbox("Taste good", unique_values["Taste"])
         Odor = st.selectbox("Smell good ?", unique_values["Odor"])
         Fat = st.selectbox("Has fat ?", unique_values["Fat"])
-        Turbidity = st.selectbox("Turbidity", unique_values["Turbidity"])
-        Colour = st.slider("Colour ?", min_value=0, max_value=255)
+        Turbidity = st.selectbox("Turbidity ?", unique_values["Turbidity"])
+        Colour = st.slider("Colour (Black = 0, White = 255)", min_value=0, max_value=255)
 
         clicked = st.form_submit_button("Predict Quality")
         if clicked:
@@ -28,7 +28,12 @@ def main():
                                                  "Fat": [Fat],
                                                  "Turbidity": [Turbidity],
                                                  "Colour": [Colour]}))
-            result = result[0]
+            if result[0] = 0 :
+                result = 'low'
+            elif result[0] = 1:
+                result = 'medium'
+            else :
+                result = 'high'
             st.success('The predicted quality is {}'.format(result))
 
 if __name__ == '__main__':
