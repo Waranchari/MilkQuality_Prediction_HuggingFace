@@ -28,9 +28,9 @@ def main():
                                                  "Fat": [Fat],
                                                  "Turbidity": [Turbidity],
                                                  "Colour": [Colour]}))
-            if result[0] = 0 :
+            if result[0] == 0 :
                 result = 'low'
-            elif result[0] = 1:
+            elif result[0] == 1:
                 result = 'medium'
             else :
                 result = 'high'
