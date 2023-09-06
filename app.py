@@ -10,9 +10,9 @@ def main():
     st.title("Milk Quality Analysis")
 
     with st.form("questionaire"):
-        pH = st.slider("pH Value", min_value=0.0, max_value=14.0, step=0.1)
+        pH = st.slider("pH Value", min_value=0, max_value=14, step=0.1)
         Temperature = st.slider("Temperature", min_value=0, max_value=100)
-        Taste = st.selectbox("Taste", unique_values["Taste"])
+        Taste = st.selectbox("Taste", ["Good","Bad"])
         Odor = st.selectbox("Odor", unique_values["Odor"])
         Fat = st.selectbox("Fat", unique_values["Fat"])
         Turbidity = st.selectbox("Turbidity", unique_values["Turbidity"])
