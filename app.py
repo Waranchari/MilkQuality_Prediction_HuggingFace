@@ -12,7 +12,7 @@ def main():
     with st.form("questionaire"):
         pH = st.slider("pH Value", min_value=0.0, max_value=14.0, step=0.1)
         Temperature = st.slider("Temperature", min_value=0, max_value=100)
-        Taste = st.selectbox("Taste good", unique_values["Taste"])
+        Taste = st.selectbox("Taste good ?", unique_values["Taste"])
         Odor = st.selectbox("Smell good ?", unique_values["Odor"])
         Fat = st.selectbox("Has fat ?", unique_values["Fat"])
         Turbidity = st.selectbox("Turbidity ?", unique_values["Turbidity"])
